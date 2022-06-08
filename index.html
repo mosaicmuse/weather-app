@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fcbb745e7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <div class="row">
+          <div class="col">
+            <p class="label">Show me the weather in:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <form id="city-input">
+              <input type="text" id="city-name"/>
+          </div>
+          <div class="col-2">
+              <input type="submit" value="GO" />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" id="current-location">Show weather for my current location</a>
+            </div>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="row">
+          <div class="col-7 main">
+            <h2 id="city-display">Rome</h2>
+            <p id="date-time"></p>
+            <p id="main-temperature"><span id="main-temp-num">70</span>° <!--<a href="#" id="temp-f">-->F<!--</a> | <a href="#" id="temp-c">C</a>--></p>
+            <i class="fa-solid fa-snowflake main-icon"></i>
+          </div>
+          <div class="col-5 sidebar">
+            <div class="row week">
+              <div class="col-4 day">Tues.</div>
+              <div class="col-4 day">60°F</div>
+              <div class="col-4 day"><i class="fa-solid fa-cloud-sun"></i></div>
+            </div>
+            <div class="row week">
+              <div class="col-4 day">Wed.</div>
+              <div class="col-4 day">54°F</div>
+              <div class="col-4 day"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+            </div>
+            <div class="row week">
+              <div class="col-4 day">Thurs.</div>
+              <div class="col-4 day">50°F</div>
+              <div class="col-4 day"><i class="fa-solid fa-wind"></i></div>
+            </div>
+            <div class="row week">
+              <div class="col-4 day">Fri.</div>
+              <div class="col-4 day">59°F</div>
+              <div class="col-4 day"><i class="fa-solid fa-cloud-sun"></i></div>
+            </div>
+            <div class="row week">
+              <div class="col-4 day">Sat.</div>
+              <div class="col-4 day">71°F</div>
+              <div class="col-4 day"><i class="fa-solid fa-sun"></i></div>
+            </div>
+            <div class="row week">
+                <div class="col-4 day">Sun.</div>
+                <div class="col-4 day">75°F</div>
+                <div class="col-4 day"><i class="fa-solid fa-sun"></i></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
